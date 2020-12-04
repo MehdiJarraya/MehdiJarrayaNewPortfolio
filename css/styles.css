@@ -741,6 +741,15 @@ Skills
 .value-80 {
   width: 80%;
 }
+.value-95 {
+  width: 95%;
+}
+.value-85 {
+  width: 85%;
+}
+.value-75 {
+  width: 75%;
+}
 .skill-text {
   position: absolute;
   top: -2rem;
@@ -753,6 +762,15 @@ Skills
 }
 .skill-text-80 {
   left: 80%;
+}
+.skill-text-95 {
+  left: 95%;
+}
+.skill-text-85 {
+  left: 85%;
+}
+.skill-text-75 {
+  left: 75%;
 }
 
 /*
