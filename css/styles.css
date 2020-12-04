@@ -1001,6 +1001,8 @@ Projects
 .project-container img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  object-fit: cover;
+  height: 215px;
 }
 .project-container {
   position: relative;
