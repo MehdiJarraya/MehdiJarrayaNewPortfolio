@@ -134,9 +134,9 @@ p {
   }
 
   h1,
-h2,
-h3,
-h4 {
+  h2,
+  h3,
+  h4 {
     line-height: 1;
   }
 }
@@ -424,7 +424,7 @@ Hero
 
   /* hero photo outside  */
   .hero-img::before,
-.about-img::before {
+  .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -648,7 +648,7 @@ Projects
     grid-area: d;
   }
 }
-@media screen and (min-width: 1170px){
+@media screen and (min-width: 1170px) {
   .project-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -719,13 +719,36 @@ Connect
   background: var(--clr-primary-10);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
 }
 
 /* add clip path */
 .connect {
-  -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    0 90%,
+    0 10%
+  );
   clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
 
@@ -1115,4 +1138,238 @@ Projects
   color: var(--clr-primary-5);
   transition: var(--transition);
   justify-self: end;
+}
+
+// contact form section
+// $default-font-size: 1.6rem;
+$white: #fff;
+$black: #000000;
+
+$primary: #ffbd39;
+$primary-dark: #020201;
+$primary-light: #ffd480;
+$secondary: #040504;
+$grey-dark-2: #999;
+@import "bootstrap/bootstrap";
+// @import 'bootstrap/variables';
+.book {
+  // change ths
+  background-image: linear-gradient(
+      105deg,
+      rgba($white, 0.6) 0%,
+      rgba($grey-dark-2, 0.6) 50%,
+      transparent 50%
+    ),
+    url(../images/contactImage.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($white, 0.9) 0%,
+        rgba($grey-dark-2, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../images/contactImage.jpg);
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($white, 0.9) 0%,
+        rgba($grey-dark-2, 0.9) 100%
+      ),
+      url(../images/contactImage.jpg);
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+// .book__form {
+//     width: 50%;
+//     padding: 6rem;
+//   }
+//   @media only screen and (max-width: 75em) {
+//     .book__form {
+//       width: 65%;
+//     }
+//   }
+//   @media only screen and (max-width: 56.25em) {
+//     .book__form {
+//       width: 100%;
+//     }
+//   }
+
+
+
+.form__group:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 56.25em) {
+  .form__input {
+    width: 100%;
+  }
+}
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #ffbd39;
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid #999;
+}
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffbd39;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  -ms-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+@media only screen and (max-width: 56.25em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #ffbd39;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+}
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #ffbd39;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}
+
+.submit-button {
+  margin: auto;
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  height: 38px;
+  width: 180px;
+  line-height: 38px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 15px 30px rgba(black, 0.1);
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: $primary;
+  border-radius: 10rem;
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 15px rgba(black, 0.1);
+    // remove button outlne bleu
+    outline: 0;
+  }
+
+  &.animated {
+    animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+
+  > span {
+    display: block;
+    color: $black;
+    text-align: center;
+
+    &.pre-state-msg {
+      transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+      transition-delay: 0.75s;
+    }
+  }
+
+  &.state-1 {
+    .pre-state-msg {
+      margin-top: -38px;
+    }
+  }
+
+  &.state-2 {
+    .pre-state-msg {
+      margin-top: -76px;
+    }
+  }
 }
