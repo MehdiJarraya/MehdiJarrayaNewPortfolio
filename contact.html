@@ -78,14 +78,96 @@
         <div class="underline"></div>
       </div>
       <div class="page-info section-center">
-        <p>
+        <!-- <p>
           If you are looking to get ahold of me, you can send me an email at
           <a href="mailto:email@email.com">@your_email</a>
         </p>
         <p>
           You can also reach me on Twitter at
           <a href="https://www.twitter.com">@your_social_media </a>
-        </p>
+        </p> -->
+
+    
+
+    
+          <div class="row d-flex contact-info mb-5">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-map-signs"></span>
+                </div>
+                <h3 class="mb-4">Address</h3>
+                <p>Chotrana 1 Soukra, Ariana, Tunisia</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-phone2"></span>
+                </div>
+                <h3 class="mb-4">Contact Number</h3>
+                <p><a class="textHoverYellow" href="tel://+21653366536">+216 53 366 536</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-paper-plane"></span>
+                </div>
+                <h3 class="mb-4">Email Address</h3>
+                <p><a class="textHoverYellow" href="mailto:mehdi.jarraya@gmail.com">mehdi.jarraya@gmail.com</a>
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+              <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-github"></span>
+                </div>
+                <h3 class="mb-4">Github</h3>
+                <p><a class="textHoverYellow" href="https://github.com/MehdiJarraya">MehdiJarraya</a></p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="book">
+            <div class="book__form">
+              <!-- using on submit we can be sure the from is valid ! ;) -->
+              <form id="contact-beautifull-form" class="form" action="#" onsubmit="return sendMail(event)">
+    
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+    
+                <div class="form__group">
+                  <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+    
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Subject" id="subject" required>
+                  <label for="subject" class="form__label">Subject</label>
+                </div>
+    
+                <div class="form__group">
+                  <textarea name="message" id="" cols="30" rows="6" class="form__input"
+                    placeholder="Message"></textarea>
+                  <label for="Message" class="form__label">Message</label>
+                </div>
+                <div class="form-group">
+                  <button class="submit-button submit-button--yellow"><span
+                      class="pre-state-msg">Submit</span><span
+                      class="current-state-msg hide">Sending...</span><span
+                      class="done-state-msg hide">Done!</span></button>
+    
+                </div>
+              </form>
+    
+            </div>
+          
+        </div>
       </div>
     </section>
     <!-- footer -->
