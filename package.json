@@ -4,7 +4,8 @@
   "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:Sass:file":"sass --watch css/styles.scss css/styles.css"
   },
   "repository": {
     "type": "git",
