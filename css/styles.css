@@ -1142,7 +1142,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(153, 153, 153, 0.6) 50%, transparent 50%), url(../images/contactImage.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.9rem 2.5rem rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 75em) {
   .book {
@@ -1156,7 +1156,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .book__form {
   width: 50%;
-  padding: 6rem;
+  padding: 3.75rem;
 }
 @media only screen and (max-width: 75em) {
   .book__form {
@@ -1170,14 +1170,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .form__group:not(:last-child) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.31rem;
 }
 
 .form__input {
-  font-size: 1.5rem;
+  font-size: 0.93rem;
   font-family: inherit;
   color: inherit;
-  padding: 1.5rem 2rem;
+  padding: 0.93rem 1.25rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -1196,8 +1196,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .form__input:focus {
   outline: none;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #ffbd39;
 }
 
@@ -1210,10 +1210,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .form__label {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-left: 2rem;
-  margin-top: 0.7rem;
+  margin-left: 1.25rem;
+  margin-top: 0.43rem;
   display: block;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1224,9 +1224,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translateY(-4rem);
-  -ms-transform: translateY(-4rem);
-  transform: translateY(-4rem);
+  -webkit-transform: translateY(-2.5rem);
+  -ms-transform: translateY(-2.5rem);
+  transform: translateY(-2.5rem);
 }
 
 .form__radio-group {
@@ -1237,7 +1237,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @media only screen and (max-width: 56.25em) {
   .form__radio-group {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
   }
 }
 .form__radio-input {
@@ -1245,28 +1245,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .form__radio-label {
-  font-size: 1.6rem;
+  font-size: 1rem;
   cursor: pointer;
   position: relative;
-  padding-left: 4.5rem;
+  padding-left: 2.81rem;
 }
 
 .form__radio-button {
-  height: 3rem;
-  width: 3rem;
+  height: 1.87rem;
+  width: 1.87rem;
   border: 5px solid #ffbd39;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   left: 0;
-  top: -0.4rem;
+  top: -0.25rem;
 }
 
 .form__radio-button::after {
   content: "";
   display: block;
-  height: 1.3rem;
-  width: 1.3rem;
+  height: 0.81rem;
+  width: 0.81rem;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -1302,7 +1302,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: #ffbd39;
-  border-radius: 10rem;
+  border-radius: 6.25rem;
   cursor: pointer;
 }
 .submit-button:hover, .submit-button:focus {
