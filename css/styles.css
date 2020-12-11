@@ -1335,4 +1335,15 @@ canvas {
   width: 300;
 }
 
+h6 {
+  color: #778DA5;
+}
+
+.contact-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
