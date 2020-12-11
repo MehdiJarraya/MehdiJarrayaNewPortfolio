@@ -1,3 +1,5 @@
+import Scene from './Scene'
+
 const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
@@ -74,3 +76,6 @@ const finalButtonMsg = function() {
 const setInitialButtonState = function() {
   button.classList.remove("state-1", "state-2", "animated");
 };
+
+
+window.scene = new Scene()
