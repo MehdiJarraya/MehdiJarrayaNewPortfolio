@@ -116,7 +116,7 @@ void main() {
 	vec2 mouse = u_mouse * -0.5;
 	
 	vec2 circlePos = st + mouse;
-	float c = circle(circlePos, 0.15, 2.) * 2.5;
+	float c = circle(circlePos, 0.035, 2.) * 2.5;
 
 	float offx = v_uv.x + sin(v_uv.y + u_time * .1);
 	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .001) * .01;
