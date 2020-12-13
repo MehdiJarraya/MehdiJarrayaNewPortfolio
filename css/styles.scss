@@ -214,14 +214,16 @@ Navbar
   display: none;
 }
 
+
 .nav {
   height: 5rem;
   display: grid;
   align-items: center;
   transition: var(--transition);
   padding: 1rem;
-  // z-index: 101;
-  // position: relative;
+  // commme les bouttons social and hire me 
+  z-index: 103;
+  position: relative;
 }
 
 .nav-center {
@@ -293,6 +295,7 @@ Navbar
   background: var(--clr-white);
   z-index: 2;
   box-shadow: var(--light-shadow);
+  z-index: 103;
 }
 
 /*
@@ -313,7 +316,7 @@ Sidebar
   transition: var(--transition);
   /* add later */
   transform: translate(-100%);
-  // z-index: 102;
+  z-index: 103;
 }
 
 .show-sidebar {
