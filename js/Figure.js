@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { TweenMax as TM } from "gsap";
 import vertexShader from "./vertexShader.glsl";
 import fragmentShader from "./fragmentShader.glsl";
+// import trippyShader from './trippyShader.glsl'
 
 export default class Figure {
   constructor(scene, cb) {
