@@ -220,6 +220,8 @@ Navbar
   align-items: center;
   transition: var(--transition);
   padding: 1rem;
+  // z-index: 101;
+  // position: relative;
 }
 
 .nav-center {
@@ -311,6 +313,7 @@ Sidebar
   transition: var(--transition);
   /* add later */
   transform: translate(-100%);
+  // z-index: 102;
 }
 
 .show-sidebar {
@@ -385,8 +388,10 @@ Hero
   display: none;
 }
 
+
 .hero {
   background: var(--clr-primary-10);
+  position: relative;
 }
 
 .hero-center {
@@ -401,11 +406,15 @@ Hero
 }
 
 .hero-icons {
-  justify-items: start;
+  justify-items: center;
+  z-index: 101;
+  position: relative;
 }
 
 .hero-btn {
   margin-top: 1.25rem;
+  z-index: 101;
+  position: relative;
 }
 
 /* later in the media query */
@@ -442,6 +451,12 @@ Hero
     border-radius: var(--radius);
   }
 }
+
+@media screen and (max-width: 991px) {
+.canvasClass {
+    display: none;
+  }
+  }
 /*
 =============== 
 About
@@ -1380,14 +1395,14 @@ $grey-dark-2: #999;
 }
 
 @media screen and (min-width: 990px) {
-canvas {
+.canvasClass {
   position: absolute;
   left: 0;
   top: 0;
   // width: 50px;
   // height: 100vh;
   z-index: 100;
-  // background-color: red;
+
 }
 }
 
