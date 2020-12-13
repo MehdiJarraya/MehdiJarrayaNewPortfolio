@@ -1327,15 +1327,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: -76px;
 }
 
-canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 300;
+@media screen and (min-width: 990px) {
+  canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
 }
-
 h6 {
   color: #778DA5;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
 }
 
 .contact-icons {
