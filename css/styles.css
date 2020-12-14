@@ -1212,7 +1212,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   outline: none;
   -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
-  border-bottom: 3px solid #ffbd39;
+  border-bottom: 3px solid var(--clr-primary-5);
 }
 
 .form__input:focus:invalid {
@@ -1232,7 +1232,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  color: #ffbd39;
+  color: var(--clr-primary-5);
 }
 
 .form__input:placeholder-shown + .form__label {
@@ -1315,7 +1315,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border: 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #ffbd39;
+  background-color: var(--clr-primary-5);
+  color: var(--clr-primary-1);
   border-radius: 6.25rem;
   cursor: pointer;
 }
