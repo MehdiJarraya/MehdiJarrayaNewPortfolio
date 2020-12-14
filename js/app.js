@@ -1,10 +1,11 @@
 import Scene from './Scene'
+import "../css/styles.css"
 
 const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
-// const date = document.querySelector("#date");
+const date = document.querySelector("#date");
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
@@ -28,7 +29,7 @@ closeBtn.addEventListener("click", function () {
 const button = document.querySelector(".submit-button"),
   stateMsg = document.querySelector(".pre-state-msg");
 
-const sendMail = function(e) {
+window.sendMail = function(e) {
   // prevent form form navigation
   e.preventDefault();
   var target = e.target || e.srcElement;
@@ -50,6 +51,7 @@ const sendMail = function(e) {
     message +
     "&to=mehdi.jarraya@gmail.com";
 
+    console.log("data", data) ;
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "https://portfoliobackk.herokuapp.com/contact");
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -57,9 +59,12 @@ const sendMail = function(e) {
   xhr.onreadystatechange = function() {
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
       // Requête finie, traitement ici.
+      console.log("sucess");
       console.log("200");
       finalButtonMsg();
       document.getElementById("contact-beautifull-form").reset();
+    }else{
+      console.log("fail");
     }
   };
 
