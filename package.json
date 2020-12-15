@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:Sass:file": "sass --watch css/styles.scss css/styles.css",
-    "dev": "parcel index.html --open",
-    "build": "parcel index.html --open"
+    "watch:Sass:file": "sass --watch css/styles.scss css/styles.scss",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 import Scene from './Scene'
-import "../css/styles.css"
+import "../css/styles.scss"
 
 const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
