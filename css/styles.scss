@@ -650,7 +650,7 @@ Projects
   .projects-center {
     grid-template-rows: 200px 200px;
     gap: 1rem;
-    grid-template-areas: "a b b" "a c d";
+    grid-template-areas: "a e b" "a c d";
   }
 
   .project {
@@ -675,6 +675,9 @@ Projects
 
   .project-4 {
     grid-area: d;
+  }
+  .project-5 {
+    grid-area: e;
   }
 }
 @media screen and (min-width: 1170px) {
